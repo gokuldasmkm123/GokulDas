@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>Facebook</title>
+<link rel="stylesheet" type="text/css" href="but.css">
+<script type="text/javascript">
+function myf()
+{
+var usern=document.getElementById("fname").value;
+if(usern.length<3)
+{
+alert("Name must need atleast 3 characters");
+}
+var userm=document.getElementById("laname").value;
+if(userm.length<3)
+{
+alert("Name must need atleast 3 characters");
+}
+var pas=document.getElementById("pass").value;
+if(pas.length<8)
+{
+alert("password is too short");
+}
+if(pas.length>13)
+{
+alert("password is too long");
+}
+
+var today=new Date();
+var n=today.getFullYear();
+//document.write(n);
+var dateofb=new Date (document.getElementById("dob").value).getFullYear();
+var age=n-dateofb;
+
+if(age<13)
+{
+alert("Sorry! you are not aged");
+}
+//document.write(age);
+/*else if
+*/
+}
+</script>
+</head>
+<body bgcolor="dedefa">
+
+
+<div width="1330" height="700" >
+         <div style="position: absolute;top:0px;left: 0px;background-color: #3b5998;width:512px;height: 100px">
+          <pre><h1><font face="tahoma"color="white" size="7">         facebook.</h1></pre>
+		  </div>
+
+	<div style="position: absolute;top:0px;right:0px;background-color: #3b5998;width:870px;height: 100px">
+	</div>
+	
+	<div style="position:absolute; top:6px; left:800px">
+
+		<input type="text" placeholder="Email/Phone number" name="id" />
+		<input type="password" placeholder="Password" name="pass"/>
+		<input class="btn" type="button" name="log1" value="Login" >
+	
+	
+    </div>
+	
+	<div width="1330" height="700" >
+	
+	<img  src="fb.jpg" width="700" height="500" style="margin-top:90px;">
+	
+	
+	</div>
+	
+		<div style="position: absolute;top:115px;right: 15px;  width: 450px;height: 100px">
+		 <font color="black" font face="tahoma" font size="6"> <b> Sign Up</b></font>
+		    
+		</div>
+		
+		
+	
+	
+	<div style="position:absolute;top:150px;right:20px;width:500;height:300px">
+	
+	        
+			<input type="text"  style="width: 100px" placeholder="First Name"  id="fname" />  
+			<input type="text" style="width: 165px" placeholder="Last Name"  id="laname"/>
+			<input type="text"  style="width: 280px" id="phnum" placeholder="Mobile Number"/><br>
+			<input type="text"  style="width: 280px" id="email" placeholder="Email"/>
+			<input type="password" style="width: 280px"id="pass" placeholder="Password" />
+			<input type="date" style="width: 280px" id="dob" placeholder="DOB" />
+		
+     </div>
+		   <div style="position:absolute;top:313;right:20px;width:500;height:100px">
+    <font color="black" font size="1">By clicking Sign Up, you agree to our Terms and that you have read our Data Use Policy,Including our Cookie Use.</font><br>
+		<br>
+		<div style="position:absolute;top:52;right:0px;width:500;height:100px">
+		<input type="button" onclick="myf()" class="btnlog name="signup"  value="Sign Up Now!"  />
+		</div>
+	    </div>
+	
+	
+
+	
+	
+	
+	
+	
+
+</div>
+</body>
+</html>
